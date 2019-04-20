@@ -2,11 +2,11 @@
   <div class="login_container">
     <div class="box">
       <img src="../assets/images/logo.png" alt>
-      <el-form :model="form">
-        <el-form-item>
+      <el-form :model="form" >
+        <el-form-item >
           <el-input placeholder="请输入用户名" v-model="form.username"></el-input>
         </el-form-item>
-        <el-form-item>
+        <el-form-item >
           <el-input type="password" placeholder="请输入密码" v-model="form.password"></el-input>
         </el-form-item>
         <el-form-item>
@@ -28,7 +28,8 @@ export default {
         password: ""
       }
     };
-  }
+  },
+  methods: {}
 };
 </script>
 
@@ -49,6 +50,7 @@ export default {
   box-shadow: 0 0 10px #eee;
   padding: 15px;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 .login_container .box img {
   margin: 0px 100px 15px 100px;
