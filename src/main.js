@@ -7,6 +7,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 引入全局样式
 import './assets/css/global.css'
 
+// 引入字体图标样式
+import './assets/fonts/iconfont.css'
+
 // 导入axios
 import axios from './http/index'
 Vue.prototype.$axios = axios

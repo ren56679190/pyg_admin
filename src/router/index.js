@@ -4,7 +4,7 @@ import Login from '../components/login'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -13,3 +13,10 @@ export default new Router({
     }
   ]
 })
+
+// 添加导航守卫
+router.beforeEach((to, from, next) => {
+  next()
+})
+
+export default router
