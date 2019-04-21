@@ -43,14 +43,15 @@ export default {
       this.$refs.form.validate(valid => {
         if (valid) {
           this.$axios.post("login", this.form).then(res => {
-            console.log(res)
+            // console.log(res)
             if(res.data.meta.status == 400){
               this.$message.error(res.data.meta.msg)
             }
             if(res.data.meta.status == 200){
               this.$message.success(res.data.meta.msg)
+              //保存token信息
               sessionStorage.setItem('token',res.data.data.token)
-              console.log(sessionStorage)
+              this.$router.push('/home')
             }
           });
         }
@@ -69,7 +70,7 @@ export default {
 .login_container .box {
   width: 400px;
   height: 250px;
-  background: linear-gradient(45deg, #d2ecf1, #efefef);
+  background: linear-gradient(45deg, #02d9ff, #029ef8);
   position: absolute;
   top: 50%;
   right: 50%;
