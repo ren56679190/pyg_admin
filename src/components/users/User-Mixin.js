@@ -196,7 +196,7 @@ export default {
       // 表单验证
       this.$refs.editForm.validate(async valid => {
         if (valid) {
-          const {data: {meta}} = await this.$axios.put(`users/${this.editForm.id}`,{
+          const {data: {meta}} = await this.$axios.put(`users/${this.editForm.id}`, {
             email: this.editForm.email,
             mobile: this.editForm.mobile
           })
