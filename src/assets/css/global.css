@@ -6,3 +6,14 @@ body {
 html,body,#app {
     height: 100%;
 }
+.el-card {
+    margin-top: 15px;
+}
+
+.el-table {
+    margin-top: 15px;
+}
+.el-pagination {
+    margin-top: 20px;
+    text-align: right;
+}
